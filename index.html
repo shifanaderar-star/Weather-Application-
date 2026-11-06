@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Symphony</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Sky Symphony</h1>
+            <div class="line"></div>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div class="weather">
+
+            <h2 id="city">Kochi</h2>
+
+            <div id="icon">☀️</div>
+
+            <h1 id="temperature">--°C</h1>
+
+            <p id="description">Loading...</p>
+
+        </div>
+
+        <div class="details">
+
+            <div class="detail-box">
+                <span>💧</span>
+                <div>
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <span>💨</span>
+                <div>
+                    <p>Wind Speed</p>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <span>🌡️</span>
+                <div>
+                    <p>Feels Like</p>
+                    <h3 id="feels">--°C</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <span></span>
+            where the sky tells its story
+            <span></span>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
